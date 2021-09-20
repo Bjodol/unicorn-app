@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="840" height="902" viewBox="0 0 840 902">
+  <defs>
+    <clipPath id="clip-Artist_1">
+      <rect width="840" height="902"/>
+    </clipPath>
+  </defs>
+  <g id="Artist_1" data-name="Artist – 1" clip-path="url(#clip-Artist_1)">
+    <path id="Path_71" data-name="Path 71" d="M73.27,17.945c40.466,0,73.27.384,73.27,21.546s-32.8,38.316-73.27,38.316S0,60.652,0,39.491,32.8,17.945,73.27,17.945Z" transform="translate(614.185 347.793) rotate(-125)"/>
+    <line id="Line_4" data-name="Line 4" y1="18" x2="20" transform="translate(635.276 230.176) rotate(2)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="10"/>
+    <text id="_" data-name="🎨" transform="translate(91.48 529.745) rotate(-13)" fill="#707070" font-size="176" font-family="AppleColorEmoji, Apple Color Emoji"><tspan x="0" y="0">🎨</tspan></text>
+  </g>
+</svg>

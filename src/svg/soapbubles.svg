@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="840" height="902" viewBox="0 0 840 902">
+  <defs>
+    <clipPath id="clip-Såpebobler_1">
+      <rect width="840" height="902"/>
+    </clipPath>
+  </defs>
+  <g id="Såpebobler_1" data-name="Såpebobler – 1" clip-path="url(#clip-Såpebobler_1)">
+    <rect id="Rectangle_4" data-name="Rectangle 4" width="8.557" height="82.221" rx="4.278" transform="translate(159.046 406.912) rotate(-26)" fill="#686bad"/>
+    <ellipse id="Ellipse_5" data-name="Ellipse 5" cx="20.385" cy="20.385" rx="20.385" ry="20.385" transform="translate(133.833 385.201) rotate(-16)" fill="#686bad"/>
+    <ellipse id="Ellipse_6" data-name="Ellipse 6" cx="15.758" cy="15.758" rx="15.758" ry="15.758" transform="translate(139.555 388.372) rotate(-16)" fill="#fafafa"/>
+    <circle id="Ellipse_7" data-name="Ellipse 7" cx="37.5" cy="37.5" r="37.5" transform="translate(109 247)" fill="#dfa3e6" opacity="0.607"/>
+    <circle id="Ellipse_9" data-name="Ellipse 9" cx="19" cy="19" r="19" transform="translate(55 172)" fill="#dfa3e6" opacity="0.607"/>
+    <circle id="Ellipse_8" data-name="Ellipse 8" cx="19" cy="19" r="19" transform="translate(93 355)" fill="#dfa3e6" opacity="0.607"/>
+    <g id="Group_25" data-name="Group 25" transform="translate(122.833 267.683)">
+      <path id="Path_52" data-name="Path 52" d="M19.752,2.077,11.322,0l.315,5.293Z" transform="translate(-8.218)" fill="#fff"/>
+      <path id="Path_53" data-name="Path 53" d="M0,21.139l.687,4.372,5.795-3.976L2.974,19.959Z" transform="translate(0 -14.488)" fill="#fff" opacity="0.5"/>
+      <path id="Path_54" data-name="Path 54" d="M50.279.088l-4.049,1.6.243,1.01Z" transform="translate(-33.558 -0.064)" fill="#fff" opacity="0.5"/>
+      <path id="Path_55" data-name="Path 55" d="M20.792,6.935l-.243-1.01-1.139.453L11.3,9.594l-.445.178,3.508,1.576,8.413,3.774Z" transform="translate(-7.876 -4.3)" fill="#fff" opacity="0.8"/>
+    </g>
+    <g id="Group_26" data-name="Group 26" transform="translate(101 366.749)">
+      <path id="Path_52-2" data-name="Path 52" d="M16.867,1.366,11.322,0l.207,3.482Z" transform="translate(-9.28)" fill="#fff"/>
+      <path id="Path_53-2" data-name="Path 53" d="M0,20.735l.452,2.876L4.264,21,1.957,19.959Z" transform="translate(0 -16.36)" fill="#fff" opacity="0.5"/>
+      <path id="Path_54-2" data-name="Path 54" d="M48.894.088,46.231,1.14l.16.665Z" transform="translate(-37.894 -0.072)" fill="#fff" opacity="0.5"/>
+      <path id="Path_55-2" data-name="Path 55" d="M17.39,6.589l-.16-.665-.75.3L11.143,8.338l-.292.117,2.307,1.037,5.534,2.483Z" transform="translate(-8.894 -4.856)" fill="#fff" opacity="0.8"/>
+    </g>
+    <g id="Group_27" data-name="Group 27" transform="translate(61 181.374)">
+      <path id="Path_52-3" data-name="Path 52" d="M16.867,1.366,11.322,0l.207,3.482Z" transform="translate(-9.28)" fill="#fff"/>
+      <path id="Path_53-3" data-name="Path 53" d="M0,20.735l.452,2.876L4.264,21,1.957,19.959Z" transform="translate(0 -16.36)" fill="#fff" opacity="0.5"/>
+      <path id="Path_54-3" data-name="Path 54" d="M48.894.088,46.231,1.14l.16.665Z" transform="translate(-37.894 -0.072)" fill="#fff" opacity="0.5"/>
+      <path id="Path_55-3" data-name="Path 55" d="M17.39,6.589l-.16-.665-.75.3L11.143,8.338l-.292.117,2.307,1.037,5.534,2.483Z" transform="translate(-8.894 -4.856)" fill="#fff" opacity="0.8"/>
+    </g>
+    <text id="_" data-name="🛼" transform="matrix(-0.5, -0.866, -0.866, 0.5, 300.404, 727.286)" fill="#707070" font-size="180" font-family="AppleColorEmoji, Apple Color Emoji"><tspan x="0" y="180">🛼</tspan></text>
+    <text id="_2" data-name="🛼" transform="translate(595.132 707.696) rotate(-65)" fill="#707070" font-size="180" font-family="AppleColorEmoji, Apple Color Emoji"><tspan x="0" y="180">🛼</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="840" height="902" viewBox="0 0 840 902">
+  <defs>
+    <clipPath id="clip-Read_1">
+      <rect width="840" height="902"/>
+    </clipPath>
+  </defs>
+  <g id="Read_1" data-name="Read – 1" clip-path="url(#clip-Read_1)">
+    <text id="_" data-name="👓" transform="translate(404.835 187.414) rotate(21)" fill="#707070" font-size="250" font-family="AppleColorEmoji, Apple Color Emoji"><tspan x="0" y="250">👓</tspan></text>
+    <g id="Group_10" data-name="Group 10" transform="translate(-1.171 391.544) rotate(-29)">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="125.799" height="163" transform="matrix(0.94, 0.342, -0.342, 0.94, 58.39, 2.641)" fill="#19136f" stroke="#000" stroke-width="3"/>
+      <path id="Path_37" data-name="Path 37" d="M164,1H57V4.273l89.491,3.818L154.759,25Z" fill="#19136f" stroke="#000" stroke-width="3"/>
+      <path id="Path_38" data-name="Path 38" d="M164.232,41.5l-15-37.5-92-2Z" fill="#19136f" stroke="#000" stroke-width="3"/>
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="11" height="163.665" transform="matrix(0.94, 0.342, -0.342, 0.94, 56.831, 1.641)" fill="#19136f" stroke="#000" stroke-width="3"/>
+      <path id="Path_46" data-name="Path 46" d="M25,0" transform="translate(101.732 8.5)" fill="none" stroke="#000" stroke-width="3"/>
+      <path id="Path_48" data-name="Path 48" d="M-64.868-19.448,34.541,13.879" transform="translate(126.911 21.533)" fill="none" stroke="#000" stroke-width="3"/>
+      <path id="Path_47" data-name="Path 47" d="M0,0" transform="translate(89.103 11.511)" fill="none" stroke="#000" stroke-width="3"/>
+      <path id="Path_45" data-name="Path 45" d="M18,0" transform="translate(130.732 15.5)" fill="none" stroke="#000" stroke-width="3"/>
+      <path id="Path_40" data-name="Path 40" d="M66,92.264l2.507,15.95,21.14-14.506-12.8-5.749Z" fill="#19136f" opacity="0.5"/>
+      <path id="Path_49" data-name="Path 49" d="M-64.868-19.448,30.911,5.016" transform="translate(127.786 22.018)" fill="none" stroke="#000" stroke-width="3"/>
+      <path id="Path_50" data-name="Path 50" d="M-64.868-19.448,27.348-2.969" transform="translate(126.911 21.533)" fill="none" stroke="#000" stroke-width="3"/>
+      <path id="Path_51" data-name="Path 51" d="M-64.868-19.448,27.671-12.7" transform="translate(124.919 22.703)" fill="none" stroke="#000" stroke-width="3"/>
+    </g>
+    <g id="Group_11" data-name="Group 11" transform="translate(104 408)">
+      <path id="Path_52" data-name="Path 52" d="M42.074,7.576,11.322,0l1.151,19.31Z" fill="#d82dbf"/>
+      <path id="Path_53" data-name="Path 53" d="M0,24.264l2.507,15.95,21.14-14.506-12.8-5.749Z" fill="#d82dbf" opacity="0.5"/>
+      <path id="Path_54" data-name="Path 54" d="M61,.088,46.231,5.924l.885,3.685Z" fill="#d82dbf" opacity="0.5"/>
+      <path id="Path_55" data-name="Path 55" d="M47.116,9.61l-.885-3.685L42.074,7.576,12.473,19.31l-1.622.649,12.8,5.749L54.339,39.477Z" fill="#d82dbf" opacity="0.8"/>
+    </g>
+  </g>
+</svg>
