@@ -28,7 +28,7 @@ export const InputUnicorn: React.FC<{
     const correctElement = document.getElementById(id);
     const fillableElements = correctElement.querySelectorAll(`[fill="#eee"]`);
     setFillElements(fillableElements);
-  }, []);
+  }, [id]);
 
   useEffect(() => {
     Object.entries(colorState).forEach(([pathId, color]) => {
@@ -36,7 +36,7 @@ export const InputUnicorn: React.FC<{
       const el = correctElement.querySelector(`#${pathId}`);
       el.setAttribute("fill", color);
     });
-  }, [colorState]);
+  }, [colorState, id]);
 
   useEffect(() => {
     Array.from(fillElements ?? []).forEach((node) => {
@@ -55,7 +55,7 @@ export const InputUnicorn: React.FC<{
         node.removeEventListener("click", listener);
       });
     };
-  }, [fillElements]);
+  }, [fillElements, disabled]);
 
   const ids = useMemo(() => {
     return Array.from(fillElements ?? []).map((node) => (node as any).id);
@@ -70,16 +70,16 @@ export const InputUnicorn: React.FC<{
         pathId,
       })),
     };
-    const { data } = await axios.post(
+    await axios.post(
       "https://unicorn-api.vercel.app/api/unicorns",
       payload
     );
-    console.log(data);
   };
 
   return (
     <form className="w-full space-y-4" onSubmit={onSubmit}>
       <Unicorn height="100%" width="100%" id={id} />
+      {disabled && <h3 className="text-center">{initialState.nickname}</h3>}
       {!disabled && (
         <>
           <label>
@@ -94,24 +94,13 @@ export const InputUnicorn: React.FC<{
               }}
             />
           </label>
-          <label>
-            <span>Phone number</span>
-            <input
-              disabled={disabled}
-              type="tel"
-              name="phoneNo"
-              className="border rounded border-gray-300 w-full p-4"
-              onChange={({ target: { value, name } }) => {
-                setFormState({ ...formState, [name]: value });
-              }}
-            />
-          </label>
           {ids.map((id) => (
             <div key={id}>
               <label className="grid grid-cols-2 text-right gap-4 items-center sr-only">
                 <span>Color {id}</span>
                 <input
                   disabled={disabled}
+                  tabIndex={-1}
                   id={`input-${id}`}
                   className="w-full h-12"
                   type="color"
