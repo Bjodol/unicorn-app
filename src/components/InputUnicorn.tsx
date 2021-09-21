@@ -71,7 +71,7 @@ export const InputUnicorn: React.FC<{
       })),
     };
     const { data } = await axios.post(
-      "http://unicorn-api.vercel.app/api/unicorns",
+      "https://unicorn-api.vercel.app/api/unicorns",
       payload
     );
     console.log(data);
