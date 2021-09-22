@@ -3,12 +3,14 @@ import React, { useEffect, useMemo } from "react";
 import { Unicorn as UnicornType } from "../models";
 import { Unicorn } from "./Unicorn";
 
-export const InputUnicorn: React.FC<{
+export const FormUnicorn: React.FC<{
   initialState?: UnicornType;
   disabled?: boolean;
   id?: string;
-}> = ({ initialState, disabled, id }) => {
+  onSubmit?: (value?: UnicornType) => void | Promise<void>;
+}> = ({ initialState, disabled, id, onSubmit: submitHandler }) => {
   const [fillElements, setFillElements] = React.useState<NodeList>();
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
   const [colorState, setColorState] = React.useState<{
     [pathId: string]: string;
   }>(
@@ -45,6 +47,7 @@ export const InputUnicorn: React.FC<{
         if (!disabled) inputEl?.click();
       };
       node.addEventListener("click", listener);
+      node.addEventListener("ontouchend", listener);
     });
     return () => {
       Array.from(fillElements ?? []).forEach((node) => {
@@ -53,6 +56,7 @@ export const InputUnicorn: React.FC<{
           inputEl?.click();
         };
         node.removeEventListener("click", listener);
+        node.removeEventListener("ontouchend", listener);
       });
     };
   }, [fillElements, disabled]);
@@ -63,6 +67,7 @@ export const InputUnicorn: React.FC<{
 
   const onSubmit: JSX.IntrinsicElements["form"]["onSubmit"] = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
     const payload: UnicornType = {
       ...formState,
       colors: Object.entries(colorState).map(([pathId, color]) => ({
@@ -70,10 +75,8 @@ export const InputUnicorn: React.FC<{
         pathId,
       })),
     };
-    await axios.post(
-      "https://unicorn-api.vercel.app/api/unicorns",
-      payload
-    );
+    await submitHandler(payload);
+    setIsSubmitting(false);
   };
 
   return (
@@ -114,6 +117,7 @@ export const InputUnicorn: React.FC<{
           ))}
           <button
             type="submit"
+            disabled={isSubmitting}
             className="p-4 bg-purple-600 rounded text-white w-full font-bold"
           >
             Save

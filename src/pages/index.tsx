@@ -1,20 +1,22 @@
 import axios from "axios";
 import Head from "next/head";
-import React, { useEffect } from "react";
-import { InputUnicorn } from "../components/InputUnicorn";
+import React, { useEffect, useRef } from "react";
+import { FormUnicorn } from "../components/FormUnicorn";
 import { Unicorn } from "../models";
+import useSWR, { mutate } from 'swr';
 
 export default function Home() {
-  const [unicorns, setUnicorns] = React.useState<Unicorn[]>([]);
-  useEffect(() => {
-    const fetchUnicorns = async () => {
-      const { data } = await axios.get(
-        "https://unicorn-api.vercel.app/api/unicorns"
+  const {data } = useSWR('fetch',()=>axios.get<Unicorn[]>("https://unicorn-api.vercel.app/api/unicorns"));
+  const unicorns: Unicorn[] = data?.data ?? [];
+  const ref = useRef<HTMLHeadingElement>(null);
+  const onSubmit = async (payload: Unicorn) => {
+    await axios.post(
+      "https://unicorn-api.vercel.app/api/unicorns",
+      payload
       );
-      setUnicorns(data);
-    };
-    fetchUnicorns();
-  }, []);
+    ref.current.scrollIntoView({behavior: 'smooth'});
+    mutate('fetch');
+  }
 
   return (
     <div>
@@ -26,13 +28,14 @@ export default function Home() {
 
       <main className="p-4 space-y-4">
         <h1 className="text-6xl text-center">Bring your unicorn to life</h1>
+        <h2 className="text-3xl text-center">The unicorn is feeling a little bit grey, make it feel colorful again!</h2>
         <div className="max-w-prose mx-auto">
-        <InputUnicorn id="new" />
+        <FormUnicorn id="new" onSubmit={onSubmit}/>
         </div>
-        <h2 className="text-3xl text-center">The lively herd</h2>
+        <h2 id="herd-title" ref={ref} className="text-3xl text-center">The lively herd</h2>
         <div className="sm:grid grid-cols-4 gap-4">
         {unicorns.map(({ _id, ...rest }) => (
-          <InputUnicorn key={_id} id={_id} initialState={rest} disabled />
+          <FormUnicorn key={_id} id={_id} initialState={rest} disabled />
         ))}
         </div>
       </main>
